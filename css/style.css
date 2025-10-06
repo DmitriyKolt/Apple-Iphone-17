@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/sf-pro-display_regular.woff2);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+
+.section-main {
+    text-align: center;
+    padding-top: 55px;
+    min-height: 692px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1D1D1F;
+}
+
+.iphone-pro {
+
+    background-image: image-set(
+        "../images/hero_iphone_17_pro.avif" type("image/avif"),
+        "../images/hero_iphone_17_pro.webp" type("image/webp"),
+        "../images/hero_iphone_17_pro.jpg" type("image/jpg")
+    );
+    color: #F5F5F7;
+}
+
+.iphone-air {
+    background-image: image-set(
+        "../images/hero_iphone_air.avif" type("image/avif"),
+        "../images/hero_iphone_air.webp" type("image/webp"),
+        "../images/hero_iphone_air.jpg" type("image/jpg")
+    );
+}
+
+.iphone {
+    background-image: image-set(
+        "../images/hero_iphone_17.avif" type("image/avif"),
+        "../images/hero_iphone_17.webp" type("image/webp"),
+        "../images/hero_iphone_17.jpg" type("image/jpg")
+    );
+}
+
+.section-main__title {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 5px;
+}
+
+.section-main__subtext {
+    font-size: 28px;
+    line-height: 32px;
+    max-width: 340px;
+    margin: 0 auto 7px;
+}
+
+.section-main__text {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    color: #6E6E73;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 22px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.btn-primary {
+    background-color: #0071E3;
+    color: #FFF;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #0071E3;
+    color: #0071E3;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 24px;
+    gap: 12px;
+}
+
+.collections-item {
+    min-height: 580px;
+    padding-top: 55px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collections-item__title {
+    max-width: 380px;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0 auto 4px;
+    font-weight: 400;
+}
+
+.collections-item__subtext {
+    max-width: 300px;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0 auto 9px;
+}
+
+.collections-item__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #6E6E73;
+}
+
+.collections-item .btn {
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+.collections-item .btn-box {
+    gap: 14px;
+}
+
+.airpods {
+    background-image: image-set(
+        "../images/airpodspro_3.avif" type("image/avif"),
+        "../images/airpodspro_3.webp" type("image/webp"),
+        "../images/airpodspro_3.jpg" type("image/jpg")
+    );
+}
+
+.watch-11 {
+    background-image: image-set(
+        "../images/promo_apple_watch_11.avif" type("image/avif"),
+        "../images/promo_apple_watch_11.webp" type("image/webp"),
+        "../images/promo_apple_watch_11.jpg" type("image/jpg")
+    );
+}
+
+.watch-se {
+    background-image: image-set(
+        "../images/promo_apple_watch_se.avif" type("image/avif"),
+        "../images/promo_apple_watch_se.webp" type("image/webp"),
+        "../images/promo_apple_watch_se.jpg" type("image/jpg")
+    );
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.watch-ultra {
+    background-image: image-set(
+        "../images/promo_apple_watch_ultra3.avif" type("image/avif"),
+        "../images/promo_apple_watch_ultra3.webp" type("image/webp"),
+        "../images/promo_apple_watch_ultra3.jpg" type("image/jpg")
+    );
+    color: #F5F5F7;
+}
+
+.deal {
+    background-image: image-set(
+        "../images/promo_carrier.avif" type("image/avif"),
+        "../images/promo_carrier.webp" type("image/webp"),
+        "../images/promo_carrier.jpg" type("image/jpg")
+    );
+}
+
+.trade-in {
+    background-image: image-set(
+        "../images/promo_iphone_tradein.avif" type("image/avif"),
+        "../images/promo_iphone_tradein.webp" type("image/webp"),
+        "../images/promo_iphone_tradein.jpg" type("image/jpg")
+    );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+@media (max-width: 650px) {
+    .section-main {
+        min-height: 640px;
+    }
+
+    .iphone-pro {
+        background-image: url(../images/hero_iphone_17_pro_small.jpg);
+    }
+}
